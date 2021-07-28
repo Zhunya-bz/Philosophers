@@ -1,33 +1,43 @@
 #include "philo.h"
 
-unsigned long get_time(t_data *data)
+//unsigned long get_time(t_data *data)
+//{
+//	unsigned long res;
+//	gettimeofday(&data->t_start, NULL );
+////	printf("%ld %d\n", data->t_start.tv_sec, data->t_start.tv_usec);
+//	res = (data->t_start.tv_sec * 1000 + data->t_start.tv_usec / 1000);
+////	printf("time: %llu\n", res+data->time_start);
+////	printf("start time: %llu\n", data->time_start);
+//	return (res);
+//}
+
+unsigned long get_time_0(t_data *data)
 {
 	unsigned long res;
 	gettimeofday(&data->t_start, NULL );
 //	printf("%ld %d\n", data->t_start.tv_sec, data->t_start.tv_usec);
-	res = (data->t_start.tv_sec * 1000 + data->t_start.tv_usec / 1000) -
-			data->time_start;
+	res = (data->t_start.tv_sec * 1000 + data->t_start.tv_usec / 1000) - data->time_start;
+//	printf("time: %llu\n", res+data->time_start);
 //	printf("start time: %llu\n", data->time_start);
 	return (res);
 }
 
-void my_usleep(t_data *data)
+void my_usleep(t_data *data, unsigned long long var, unsigned long long start)
 {
 	unsigned long long cur;
 
 	cur = 0;
 //	printf("%llu\n", data->time_eat);
 //	pthread_mutex_lock(&data->next_p->mut);
-//	printf("%llu\n", data->time_eat);
-	while (data->time_eat > cur)
+//	printf("get: %llu\n", var);
+	while (var > cur)
 	{
-		usleep(10);
+		usleep(50);
 		gettimeofday(&data->t_start, NULL);
 		cur = (data->t_start.tv_sec * 1000 + data->t_start.tv_usec / 1000) -
-				data->time_start;
-//		printf("cur: %llu\n", cur);
+				start - data->time_start;
 	}
-//	printf("cur: %llu\n", cur);
+//	printf("cur: %llu\n", cur + data->time_start);
 //	pthread_mutex_unlock(&data->next_p->mut);
 }
 
@@ -44,35 +54,64 @@ void *philosoph(void *tmp)
 	gettimeofday(&philo.next_d->t_start, NULL);
 	philo.next_d->time_start = (philo.next_d->t_start.tv_sec * 1000 +
 			philo.next_d->t_start.tv_usec / 1000);
-//	printf("start: %llu\n", philo.next_d->time_start);
-	my_usleep(philo.next_d);
-//	pthread_mutex_lock(&mutex);
-//	usleep(1000);
-//	printf("current time: %lu\n", get_time(philo.next_d));
-	printf("%d\n", philo.name);
-	if (philo.name % 2 == 1)// нечетные они всегда первые едят
+	while (philo.next_d->dead != 1)
 	{
-		pthread_mutex_lock(&philo.left_fork);
-		pthread_mutex_lock(&philo.right_fork);
-		my_usleep(philo.next_d);
-		//get_time(philo.next_d);
-		printf("current time: %lu\n philos: %d", get_time(philo.next_d),
-		 philo.name);
-		pthread_mutex_unlock(&philo.left_fork);
-		pthread_mutex_unlock(&philo.right_fork);
-		usleep(philo.next_d->time_sleep);
+		if (philo.name % 2 == 0)// нечетные они всегда первые едят
+			my_usleep(philo.next_d, 10, 0);
+		pthread_mutex_lock(philo.left_fork);
+		printf("%lu: %d has taken a left fork\n", get_time_0(philo.next_d),
+			   philo.name);
+		pthread_mutex_lock(philo.right_fork);
+		printf("%lu: %d has taken a right fork\n", get_time_0(philo.next_d),
+			   philo.name);
+		printf("%lu: %d is eating\n", get_time_0(philo.next_d),
+			   philo.name);
+		philo.last_eat = get_time_0(philo.next_d);
+//		printf("LAST: %llu\n", philo.last_eat);
+		my_usleep(philo.next_d, philo.next_d->time_eat, get_time_0(philo.next_d));
+		pthread_mutex_unlock(philo.left_fork);
+		pthread_mutex_unlock(philo.right_fork);
+		printf("%lu: %d is sleeping\n",
+			   get_time_0(philo.next_d), philo.name);
+		my_usleep(philo.next_d, philo.next_d->time_sleep, get_time_0(philo.next_d));
+		printf("%lu: %d is thinking\n",
+			   get_time_0(philo.next_d), philo.name);
 	}
 
-//	while (i < 10)
-//	{
-//		usleep(1000);
-//		printf("%d ", i);
-//		i++;
-//	}
-
-//	printf("Thread create %d\n", c);
-//	c++;
 //	pthread_mutex_unlock(&mutex);
+	return (NULL);
+}
+
+void *die(void *tmp)
+{
+	t_philo	*philo;
+	t_data	*data;
+	int 	i;
+	int 	j;
+
+	i = 0;
+	j = 0;
+	philo = tmp;
+	data = philo[0].next_d;
+	while (philo[i].dead != 1)
+	{
+		j = 0;
+		while (j < philo[i].next_d->nbr_ph)
+		{
+//			printf("%d\n", philo[i].name);
+			if (philo[i].next_d->time_die < get_time_0(philo[i].next_d) -
+			philo[i].last_eat)
+			{
+				printf("last eat: %llu p: %d\n", philo[i].last_eat, philo[i]
+				.name);
+				philo[i].next_d->dead = 1;
+				printf("%lu: %d died\n", get_time_0(philo[i].next_d), philo[i]
+				.name);
+				return (NULL);
+			}
+			j++;
+		}
+	}
 	return (NULL);
 }
 
@@ -85,46 +124,38 @@ void cycle_create(t_data *data)
 	i = 0;
 
 	philo = (t_philo *)malloc(data->nbr_ph * sizeof(t_philo));
-	pthread_mutex_init(&philo->mut, NULL);
-	thread = (pthread_t *)malloc(data->nbr_ph * (sizeof(pthread_t)));
-	philo->mutex = (pthread_mutex_t *)malloc(data->nbr_ph * sizeof
+	thread = (pthread_t *)malloc((data->nbr_ph + 1) * (sizeof(pthread_t)));
+	data->mutex = (pthread_mutex_t *)malloc(data->nbr_ph * sizeof
 			(pthread_mutex_t));
-
-	philo->next_d = data;
-	data->next_p = philo;
-	printf("sa\n");
-//	get_time(data);
-//	pause();
 	while (i < data->nbr_ph)
 	{
-		pthread_mutex_init(&(philo[i].mutex[i]), NULL);
+		pthread_mutex_init(&data->mutex[i], NULL);
+//		pthread_mutex_init(&philo[i].left_fork, NULL);
 		philo[i].name = i + 1;
-		printf("%d\n", philo[i].name);
-		philo[i].right_fork = philo[i].mutex[i];
-		printf("oo\n");
+		philo[i].right_fork = &data->mutex[i];
+		philo[i].dead = 0;
+		philo[i].last_eat = 0;
+		philo[i].next_d = data;
+		data->next_p = &philo[i];
 		if (i != data->nbr_ph - 1)
-		{
-			philo[i].left_fork = philo[i].mutex[i + 1];
-			printf("a\n");
-		}
+			philo[i].left_fork = &data->mutex[i + 1];
 		else
-		{
-			philo[i].left_fork = philo[i].mutex[0];
-			printf("b\n");
-		}
-		pthread_create(&thread[i], NULL, &philosoph, (void *)(philo[i]));
+			philo[i].left_fork = &data->mutex[0];
+		pthread_create(&thread[i], NULL, &philosoph, (void *)(&philo[i]));
 		i++;
 	}
+//	sleep(1);
+	pthread_create(&thread[i], NULL, &die, (void *)(philo));
 
 //	data->next_p->next_d->flag = 1;
 	i = 0;
 	while (i < data->nbr_ph)
 	{
 		pthread_join(thread[i++], NULL);
-		pthread_mutex_destroy(&data->next_p->mutex[i]);
+		pthread_mutex_destroy(&data->mutex[i]);
 	}
 	free(thread);
-	free(data->next_p->mutex);
+	free(data->mutex);
 }
 
 
