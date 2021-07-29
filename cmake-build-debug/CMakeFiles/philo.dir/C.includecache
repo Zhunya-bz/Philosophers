@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/saltmer/CLionProjects/philo/main.c
+philo.h
+/Users/saltmer/CLionProjects/philo/philo.h
+
+/Users/saltmer/CLionProjects/philo/philo.h
+stdlib.h
+-
+stdio.h
+-
+unistd.h
+-
+pthread.h
+-
+sys/time.h
+-
+
