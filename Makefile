@@ -13,7 +13,7 @@ CFLAGS = -Wall -Wextra -Werror
 HEADER = philo.h
 
 %.o: %.c
-	${CC} ${CFLAGS} -Imlx -c $< -o $@
+	${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS} ${HEADER}
 			${CC} ${CFLAGS} ${OBJS} -o ${NAME}

@@ -20,6 +20,7 @@ typedef struct s_philo {
 	pthread_mutex_t		*left_fork;
 	pthread_mutex_t		*right_fork;
 	long				last_eat;
+	int 				count_eat;
 	struct s_data		*next_d;
 }	t_philo;
 
@@ -28,12 +29,11 @@ typedef struct s_data {
 	long				time_die;
 	long				time_eat;
 	long				time_sleep;
-	int 				nbr_ph_eat;
+	int 				nbr_eat;
 	pthread_mutex_t		*mutex;
 	pthread_mutex_t		mess;
-	struct timeval		t_start;
 	long				time_start;
-	int 				flag;
+	int 				eat_all;
 	int 				dead;
 	struct s_philo		*next_p;
 }	t_data;

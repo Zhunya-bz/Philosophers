@@ -62,10 +62,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/saltmer/CLionProjects/philo
+CMAKE_SOURCE_DIR = /Users/saltmer/Philosophers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/saltmer/CLionProjects/philo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/saltmer/Philosophers/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/philo.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/philo.dir/flags.make
 
 CMakeFiles/philo.dir/ft_atoi.c.o: CMakeFiles/philo.dir/flags.make
 CMakeFiles/philo.dir/ft_atoi.c.o: ../ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saltmer/CLionProjects/philo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/philo.dir/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo.dir/ft_atoi.c.o -c /Users/saltmer/CLionProjects/philo/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saltmer/Philosophers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/philo.dir/ft_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo.dir/ft_atoi.c.o -c /Users/saltmer/Philosophers/ft_atoi.c
 
 CMakeFiles/philo.dir/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/philo.dir/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saltmer/CLionProjects/philo/ft_atoi.c > CMakeFiles/philo.dir/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saltmer/Philosophers/ft_atoi.c > CMakeFiles/philo.dir/ft_atoi.c.i
 
 CMakeFiles/philo.dir/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/philo.dir/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saltmer/CLionProjects/philo/ft_atoi.c -o CMakeFiles/philo.dir/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saltmer/Philosophers/ft_atoi.c -o CMakeFiles/philo.dir/ft_atoi.c.s
 
 CMakeFiles/philo.dir/main.c.o: CMakeFiles/philo.dir/flags.make
 CMakeFiles/philo.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saltmer/CLionProjects/philo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/philo.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo.dir/main.c.o -c /Users/saltmer/CLionProjects/philo/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/saltmer/Philosophers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/philo.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo.dir/main.c.o -c /Users/saltmer/Philosophers/main.c
 
 CMakeFiles/philo.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/philo.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saltmer/CLionProjects/philo/main.c > CMakeFiles/philo.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/saltmer/Philosophers/main.c > CMakeFiles/philo.dir/main.c.i
 
 CMakeFiles/philo.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/philo.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saltmer/CLionProjects/philo/main.c -o CMakeFiles/philo.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/saltmer/Philosophers/main.c -o CMakeFiles/philo.dir/main.c.s
 
 # Object files for target philo
 philo_OBJECTS = \
@@ -114,7 +114,7 @@ philo: CMakeFiles/philo.dir/ft_atoi.c.o
 philo: CMakeFiles/philo.dir/main.c.o
 philo: CMakeFiles/philo.dir/build.make
 philo: CMakeFiles/philo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/saltmer/CLionProjects/philo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable philo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/saltmer/Philosophers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable philo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/philo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/philo.dir/clean:
 .PHONY : CMakeFiles/philo.dir/clean
 
 CMakeFiles/philo.dir/depend:
-	cd /Users/saltmer/CLionProjects/philo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saltmer/CLionProjects/philo /Users/saltmer/CLionProjects/philo /Users/saltmer/CLionProjects/philo/cmake-build-debug /Users/saltmer/CLionProjects/philo/cmake-build-debug /Users/saltmer/CLionProjects/philo/cmake-build-debug/CMakeFiles/philo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/saltmer/Philosophers/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/saltmer/Philosophers /Users/saltmer/Philosophers /Users/saltmer/Philosophers/cmake-build-debug /Users/saltmer/Philosophers/cmake-build-debug /Users/saltmer/Philosophers/cmake-build-debug/CMakeFiles/philo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/philo.dir/depend
 

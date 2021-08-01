@@ -1,0 +1,298 @@
+[35m0: 3 has taken a left fork
+[35m1: 3 has taken a right fork
+[32m1: 3 is eating
+[35m1: 1 has taken a left fork
+[35m1: 1 has taken a right fork
+[32m1: 1 is eating
+[35m1: 5 has taken a left fork
+[35m1: 5 has taken a right fork
+[32m1: 5 is eating
+[34m201: 5 is sleeping
+[35m201: 6 has taken a left fork
+[34m201: 1 is sleeping
+[35m201: 6 has taken a right fork
+[32m201: 6 is eating
+[34m201: 3 is sleeping
+[35m201: 4 has taken a left fork
+[35m201: 4 has taken a right fork
+[32m201: 4 is eating
+[35m201: 2 has taken a left fork
+[35m201: 2 has taken a right fork
+[32m201: 2 is eating
+[34m401: 4 is sleeping
+[34m401: 6 is sleeping
+[0m401: 5 is thinking
+[35m401: 5 has taken a left fork
+[34m401: 2 is sleeping
+[0m401: 1 is thinking
+[35m401: 1 has taken a left fork
+[35m401: 5 has taken a right fork
+[32m401: 5 is eating
+[35m401: 1 has taken a right fork
+[32m401: 1 is eating
+[0m401: 3 is thinking
+[35m401: 3 has taken a left fork
+[35m401: 3 has taken a right fork
+[32m401: 3 is eating
+[34m601: 3 is sleeping
+[34m601: 1 is sleeping
+[34m601: 5 is sleeping
+[0m601: 6 is thinking
+[35m601: 6 has taken a left fork
+[0m601: 2 is thinking
+[35m601: 2 has taken a left fork
+[0m601: 4 is thinking
+[35m601: 4 has taken a left fork
+[35m601: 4 has taken a right fork
+[32m601: 4 is eating
+[35m601: 6 has taken a right fork
+[32m601: 6 is eating
+[35m601: 2 has taken a right fork
+[32m601: 2 is eating
+[34m801: 6 is sleeping
+[0m801: 1 is thinking
+[35m801: 1 has taken a left fork
+[0m801: 3 is thinking
+[34m801: 2 is sleeping
+[35m801: 3 has taken a left fork
+[35m801: 3 has taken a right fork
+[0m801: 5 is thinking
+[35m801: 5 has taken a left fork
+[32m801: 3 is eating
+[34m801: 4 is sleeping
+[35m801: 1 has taken a right fork
+[32m801: 1 is eating
+[35m801: 5 has taken a right fork
+[32m801: 5 is eating
+[34m1001: 1 is sleeping
+[34m1001: 5 is sleeping
+[34m1001: 3 is sleeping
+[0m1001: 6 is thinking
+[35m1001: 6 has taken a left fork
+[0m1001: 2 is thinking
+[35m1001: 2 has taken a left fork
+[35m1001: 6 has taken a right fork
+[32m1001: 6 is eating
+[35m1001: 2 has taken a right fork
+[32m1001: 2 is eating
+[0m1001: 4 is thinking
+[35m1001: 4 has taken a left fork
+[35m1001: 4 has taken a right fork
+[32m1001: 4 is eating
+[0m1201: 1 is thinking
+[34m1201: 6 is sleeping
+[34m1201: 2 is sleeping
+[0m1201: 3 is thinking
+[35m1201: 3 has taken a left fork
+[35m1201: 1 has taken a left fork
+[34m1201: 4 is sleeping
+[0m1201: 5 is thinking
+[35m1201: 3 has taken a right fork
+[32m1201: 3 is eating
+[35m1201: 5 has taken a left fork
+[35m1201: 5 has taken a right fork
+[32m1201: 5 is eating
+[35m1201: 1 has taken a right fork
+[32m1201: 1 is eating
+[0m1401: 2 is thinking
+[0m1401: 4 is thinking
+[34m1401: 1 is sleeping
+[34m1401: 3 is sleeping
+[35m1401: 4 has taken a left fork
+[35m1401: 4 has taken a right fork
+[32m1401: 4 is eating
+[0m1401: 6 is thinking
+[35m1401: 6 has taken a left fork
+[35m1401: 2 has taken a left fork
+[35m1401: 2 has taken a right fork
+[32m1401: 2 is eating
+[35m1401: 6 has taken a right fork
+[32m1401: 6 is eating
+[34m1401: 5 is sleeping
+[34m1601: 6 is sleeping
+[34m1601: 4 is sleeping
+[0m1601: 3 is thinking
+[35m1601: 3 has taken a left fork
+[35m1601: 3 has taken a right fork
+[32m1601: 3 is eating
+[0m1601: 1 is thinking
+[35m1601: 1 has taken a left fork
+[35m1601: 1 has taken a right fork
+[34m1601: 2 is sleeping
+[32m1601: 1 is eating
+[0m1601: 5 is thinking
+[35m1601: 5 has taken a left fork
+[35m1601: 5 has taken a right fork
+[32m1601: 5 is eating
+[0m1801: 4 is thinking
+[34m1801: 1 is sleeping
+[34m1801: 5 is sleeping
+[35m1801: 4 has taken a left fork
+[35m1801: 4 has taken a right fork
+[34m1801: 3 is sleeping
+[32m1801: 4 is eating
+[0m1801: 2 is thinking
+[0m1801: 6 is thinking
+[35m1801: 6 has taken a left fork
+[35m1801: 6 has taken a right fork
+[32m1801: 6 is eating
+[35m1801: 2 has taken a left fork
+[35m1801: 2 has taken a right fork
+[32m1801: 2 is eating
+[34m2001: 2 is sleeping
+[0m2001: 5 is thinking
+[35m2001: 5 has taken a left fork
+[0m2001: 3 is thinking
+[35m2001: 5 has taken a right fork
+[32m2001: 5 is eating
+[34m2001: 4 is sleeping
+[34m2001: 6 is sleeping
+[0m2001: 1 is thinking
+[35m2001: 1 has taken a left fork
+[35m2001: 1 has taken a right fork
+[32m2001: 1 is eating
+[35m2001: 3 has taken a left fork
+[35m2001: 3 has taken a right fork
+[32m2001: 3 is eating
+[34m2201: 1 is sleeping
+[34m2201: 5 is sleeping
+[0m2201: 2 is thinking
+[34m2201: 3 is sleeping
+[35m2201: 2 has taken a left fork
+[35m2201: 2 has taken a right fork
+[32m2201: 2 is eating
+[0m2201: 6 is thinking
+[35m2201: 6 has taken a left fork
+[35m2201: 6 has taken a right fork
+[32m2201: 6 is eating
+[0m2201: 4 is thinking
+[35m2201: 4 has taken a left fork
+[35m2201: 4 has taken a right fork
+[32m2201: 4 is eating
+[34m2401: 2 is sleeping
+[0m2401: 1 is thinking
+[35m2401: 1 has taken a left fork
+[34m2401: 4 is sleeping
+[35m2401: 1 has taken a right fork
+[32m2401: 1 is eating
+[0m2401: 3 is thinking
+[35m2401: 3 has taken a left fork
+[35m2401: 3 has taken a right fork
+[34m2401: 6 is sleeping
+[32m2401: 3 is eating
+[0m2401: 5 is thinking
+[35m2401: 5 has taken a left fork
+[35m2401: 5 has taken a right fork
+[32m2401: 5 is eating
+[34m2601: 3 is sleeping
+[34m2601: 1 is sleeping
+[0m2601: 2 is thinking
+[35m2601: 2 has taken a left fork
+[0m2601: 4 is thinking
+[35m2601: 4 has taken a left fork
+[34m2601: 5 is sleeping
+[35m2601: 4 has taken a right fork
+[32m2601: 4 is eating
+[35m2601: 2 has taken a right fork
+[32m2601: 2 is eating
+[0m2601: 6 is thinking
+[35m2601: 6 has taken a left fork
+[35m2601: 6 has taken a right fork
+[32m2601: 6 is eating
+[0m2801: 5 is thinking
+[34m2801: 2 is sleeping
+[35m2801: 5 has taken a left fork
+[34m2801: 6 is sleeping
+[0m2801: 1 is thinking
+[35m2801: 1 has taken a left fork
+[35m2801: 5 has taken a right fork
+[35m2801: 1 has taken a right fork
+[32m2801: 1 is eating
+[32m2801: 5 is eating
+[34m2801: 4 is sleeping
+[0m2801: 3 is thinking
+[35m2801: 3 has taken a left fork
+[35m2801: 3 has taken a right fork
+[32m2801: 3 is eating
+[34m3001: 5 is sleeping
+[34m3001: 3 is sleeping
+[0m3001: 4 is thinking
+[35m3001: 4 has taken a left fork
+[0m3001: 2 is thinking
+[34m3001: 1 is sleeping
+[35m3001: 2 has taken a left fork
+[35m3001: 2 has taken a right fork
+[32m3001: 2 is eating
+[35m3001: 4 has taken a right fork
+[0m3001: 6 is thinking
+[35m3001: 6 has taken a left fork
+[35m3001: 6 has taken a right fork
+[32m3001: 6 is eating
+[32m3001: 4 is eating
+[34m3201: 6 is sleeping
+[0m3201: 3 is thinking
+[0m3201: 5 is thinking
+[35m3201: 3 has taken a left fork
+[35m3201: 5 has taken a left fork
+[35m3201: 3 has taken a right fork
+[35m3201: 5 has taken a right fork
+[34m3201: 2 is sleeping
+[32m3201: 3 is eating
+[0m3201: 1 is thinking
+[35m3201: 1 has taken a left fork
+[34m3201: 4 is sleeping
+[32m3201: 5 is eating
+[35m3201: 1 has taken a right fork
+[32m3201: 1 is eating
+[0m3401: 4 is thinking
+[34m3401: 3 is sleeping
+[35m3401: 4 has taken a left fork
+[0m3401: 2 is thinking
+[35m3401: 4 has taken a right fork
+[35m3401: 2 has taken a left fork
+[35m3401: 2 has taken a right fork
+[32m3401: 2 is eating
+[34m3401: 5 is sleeping
+[0m3401: 6 is thinking
+[32m3401: 4 is eating
+[35m3401: 6 has taken a left fork
+[35m3401: 6 has taken a right fork
+[32m3401: 6 is eating
+[34m3401: 1 is sleeping
+[34m3601: 6 is sleeping
+[0m3601: 3 is thinking
+[34m3601: 2 is sleeping
+[35m3601: 3 has taken a left fork
+[0m3601: 5 is thinking
+[35m3601: 5 has taken a left fork
+[0m3601: 1 is thinking
+[34m3601: 4 is sleeping
+[35m3601: 5 has taken a right fork
+[32m3601: 5 is eating
+[35m3601: 1 has taken a left fork
+[35m3601: 1 has taken a right fork
+[32m3601: 1 is eating
+[35m3601: 3 has taken a right fork
+[32m3601: 3 is eating
+[34m3801: 3 is sleeping
+[0m3801: 6 is thinking
+[34m3801: 1 is sleeping
+[35m3801: 6 has taken a left fork
+[0m3801: 4 is thinking
+[0m3801: 2 is thinking
+[35m3801: 4 has taken a left fork
+[35m3801: 4 has taken a right fork
+[32m3801: 4 is eating
+[35m3801: 2 has taken a left fork
+[34m3801: 5 is sleeping
+[35m3801: 6 has taken a right fork
+[32m3801: 6 is eating
+[35m3801: 2 has taken a right fork
+[32m3801: 2 is eating
+[0m4001: 1 is thinking
+[34m4001: 2 is sleeping
+[34m4001: 4 is sleeping
+[34m4001: 6 is sleeping
+[0m4001: 3 is thinking
+[0m4001: 5 is thinking
+[33m4008: all the philosophers ate
