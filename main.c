@@ -100,12 +100,6 @@ void *philosoph(void *tmp)
 		if (print_on_screen(philo, 2))
 			return (NULL);
 		phil_eating(philo);
-//		philo->count_eat++;
-//		if (philo->count_eat == philo->next_d->nbr_eat)
-//		{
-//			printf("All eat\n");
-//			return (NULL);
-//		}
 		pthread_mutex_unlock(philo->left_fork);
 		pthread_mutex_unlock(philo->right_fork);
 		phil_sleeping(philo);
