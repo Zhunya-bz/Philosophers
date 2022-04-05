@@ -1,9 +1,9 @@
 # Philosophers
 
+[![saltmer's 42 Philosophers Score](https://badge42.vercel.app/api/v2/cl1mc7bhg006309kzftm5w40f/project/2264972)](https://github.com/JaeSeoKim/badge42)
+
 In this project, you will learn the basics of threading a process.
 You will see how to create threads and you will discover mutexes.
-
-[![saltmer's 42 Philosophers Score](https://badge42.vercel.app/api/v2/cl1mc7bhg006309kzftm5w40f/project/2264972)](https://github.com/JaeSeoKim/badge42)
 
 
 Один или несколько философов сидят за круглым столом.
