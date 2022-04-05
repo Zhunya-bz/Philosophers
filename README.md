@@ -25,6 +25,7 @@ You will see how to create threads and you will discover mutexes.
 * Нет необходимости говорить, что философы должны избегать смерти!
 
 Программа должна принимать следующие аргументы:
+
 number_of_philosophers time_to_die time_to_eat time_to_sleep
 [number_of_times_each_philosopher_must_eat]
 * number_of_philosophers: Количество философов, а также количество вилок.
